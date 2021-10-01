@@ -8,4 +8,5 @@ COPY . ./
 #RUN python manage.py migrate
 #CMD tail -f /dev/null
 #RUN chmod +x ./docker-entrypoint.sh
+
 ENTRYPOINT ["/app/docker-entrypoint.sh"]
